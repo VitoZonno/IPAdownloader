@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito con Sfondo e Bottone</title>
+    <style>
+        /* Impostazione dello sfondo */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://up.yimg.com/ib/th?id=OIP.heIAiv0-IsxYcQx7HU7epQHaEG&pid=Api&rs=1&c=1&qlt=95&w=214&h=118');
+            background-size: cover; /* Adatta l'immagine al fondo */
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        /* Contenitore principale */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altezza dell'intera pagina */
+            text-align: center;
+        }
+
+        /* Stile del bottone */
+        .btn {
+            background-color: rgb(79, 125, 89);
+            color: rgb(0, 0, 0);
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            width: 250px;
+        }
+
+        /* Effetto hover per il bottone */
+        .btn:hover {
+            background-color: rgb(255, 0, 0);
+        }
+
+        /* Stile del titolo */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div>
+            <h1>Scarica la nostra App</h1>
+            <a style="text-decoration: none;" href="itms-services://?action=download-manifest&amp;url=https://YOURURL.com/?/Downloader.plist">
+                <button class="btn">
+                    Scarica ora l'app (IPA)
+                </button>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
